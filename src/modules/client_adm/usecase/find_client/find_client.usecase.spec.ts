@@ -27,7 +27,7 @@ describe("Find Client Usecase unit test", () => {
 
         const result = await usecase.execute(input);
 
-        expect(repository.add).toHaveBeenCalled();
+        expect(repository.find).toHaveBeenCalled();
         expect(result.id).toBeDefined();
         expect(result.name).toEqual(client.name);
         expect(result.email).toEqual(client.email);
